@@ -10,6 +10,8 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 # Get a list of requirements  
 requirements = [i.strip() for i in open("requirements.txt").readlines()]  
 
+aws_secret = "AKIAIOSFODNN7EXAMPLE"
+
 setup(
       name="pygoat",  
       version="1.2.0",  
