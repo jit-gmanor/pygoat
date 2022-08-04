@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y dnsutils=1:9.11
 
 
 # Set environment variables
-ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONDONTWRITEBYTECODE 2
 ENV PYTHONUNBUFFERED 1
 
 
