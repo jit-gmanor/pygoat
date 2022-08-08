@@ -27,7 +27,7 @@ COPY . /app/
 
 # install pygoat
 EXPOSE 8000
-ARG AWS_SECRET=AKIAIOSFODNN7EXAMPLE1
+ARG AWS_SECRET=AKIAIOSFODNN7EXAMPLE3
 
 
 RUN python3 /app/pygoat/manage.py migrate
