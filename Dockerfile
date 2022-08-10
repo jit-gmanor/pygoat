@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y dnsutils=1:9.11
 
 
 # Set environment variables
-ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONDONTWRITEBYTECODE 2
 ENV PYTHONUNBUFFERED 1
 
 
@@ -27,6 +27,7 @@ COPY . /app/
 
 # install pygoat
 EXPOSE 8000
+ARG AWS_SECRET=AKIAIOSFODNN7EXAMPLE3
 
 
 RUN python3 /app/pygoat/manage.py migrate
